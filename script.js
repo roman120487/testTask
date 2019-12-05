@@ -18,7 +18,6 @@ calcForm.returnRestBTN.onclick = function () {
     result = summ - price;
 
     result = result.toFixed(2)
-    // console.log(result);
 
     dolars = Math.trunc(result);
     cents = result.split(".")[1].substr(0, 2);
@@ -47,11 +46,31 @@ calcForm.returnRestBTN.onclick = function () {
             cents1 = 1;
             centsNom -= 1;
             calcForm.nominals.value += ` ${cents1} цент,`;
-            // centsNom = 0;
         }
     }
 }
 
 // --------------------------------------------------------------
+let container2 = document.querySelector('.container2');
+let modalBtn = document.querySelector('.modalBtn');
+let div = document.createElement('div');
+
+modalBtn.onclick = function () {
+    container2.append(div);
+    div.className = 'modal'
+    document.querySelector('.modal').append(document.createElement('div'));
+    document.querySelector('.modal').firstChild.className = 'modalBody';
+    document.querySelector('.modalBody').append(document.createElement('button'));
+    document.querySelector('.modalBody').firstChild.className = 'closeModal';
+    document.querySelector('.closeModal').textContent = 'Close';
+    console.log('work');
+
+    let closeModal = document.querySelector('.closeModal');
+    closeModal.onclick = function () {
+        document.querySelector('.modal').remove();
+    }
+}
+
+
 
 // ------- modal window--------------

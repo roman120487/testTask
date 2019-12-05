@@ -1,26 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container {
+
+.container, .container2 {
     width: 70%;
     margin: 30px auto;
 }
-.taskContainer{
+
+.taskContainer {
     border: 1px solid lightgray;
     padding: 30px;
 }
-h2{
+
+h2 {
     margin-bottom: 30px;
 }
 
-input, button {
+input {
     height: 30px;
     font-size: 25px;
     border: 1px solid lightgray;
     border-radius: 5px;
     padding-left: 20px;
+    padding-right: 25px;
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -30,7 +34,46 @@ p {
     margin-top: 30px;
     margin-left: 10px;
 }
-input:nth-child(7){
+
+input:nth-child(7) {
     width: 100%;
 }
 
+/* modal styles */
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 98;
+}
+
+.modalBody {
+    position: relative;
+    margin: 150px auto;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    width: 50%;
+    height: 300px;
+    background-color: whitesmoke;
+}
+
+.closeModal {
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    background-color: red;
+    color: whitesmoke;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.modalBtn{
+    padding: 10px;
+    font-size: 25px;
+}
+
+/*  */
