@@ -102,5 +102,11 @@ tr button{
     border: 1px solid grey;
     border-radius: 10px;
 }
-
+.delete{
+    background-color: red;
+    color: whitesmoke;
+}
+.edit{
+    background-color: orange;
+}
 /*  */
