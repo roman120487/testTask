@@ -36,8 +36,38 @@
 
     <!--------------- Table -------------------------->
     <div class="container">
-            <h2>Task 3 - таблиця</h2>
-            <table></table>
+        <h2>Task 3 - таблиця</h2>
+        <div class="formTable">
+            <form action="" name="tableForm">
+                <input type="text" name="fName" placeholder="Введіть імя..." value="">
+                <input type="text" name="lName" placeholder="Введіть прізвище...">
+                <input type="text" name="email" placeholder="Введіть e-mail..."><br>
+                <input type="button" name="addBtn" id="" value="добавити">
+                <input type="button" style="display: none;" name="saveBtn" onclick="saveRow()" value="Зберегти">
+            </form>
+        </div>
+        <table>
+            <thead>
+                <th>№</th>
+                <th>Дата</th>
+                <th>Імя</th>
+                <th>Прізвище</th>
+                <th>E-mail</th>
+                <th>Видалити</th>
+                <th>Редагувати</th>
+            </thead>
+            <tbody>
+                <tr id="t1">
+                    <td>1</td>
+                    <td>5.12.2019</td>
+                    <td>Роман</td>
+                    <td>Костів </td>
+                    <td>roman120487@ukr.net</td>
+                    <td><button id="d1"  class="delete" onclick="deleteRow(event)">Delete</button></td>
+                    <td><button id="e1"  class="edit" onclick="editRow(event)"> Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <!-- ------------------------------------------ -->
 

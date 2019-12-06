@@ -77,3 +77,30 @@ input:nth-child(7) {
 }
 
 /*  */
+/* table */
+.formTable{
+    margin: 20px 0px;
+}
+
+table{
+    width: 100%;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+tr{
+    height: 70px;
+}
+td{
+    text-align: center;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+}
+tr button{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+/*  */
